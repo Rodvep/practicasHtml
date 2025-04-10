@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas en html</title>
+</head>
+
+<body style="margin: 0px; ">
+    <script>
+        const handleClick = (id) => {
+            const section = document.getElementById(id);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        };
+    </script>
+    <header style="position: fixed; background-color: aliceblue; width: 100%; z-index: 100; margin-top: 0px;"><button onclick="handleClick('indice')" style="background-color:rgba(0, 128, 0, 0); border-color: rgba(0, 128, 0, 0); cursor: pointer;"><h2>PRACTICA EJERCICIO LISTAS</h2></button></header>
+    <section id="indice" style="padding-top: 60px;">
+        <hr>
+        <h2>Indice de IDES</h2>
+        <ol>
+            <li><a href="#" onclick="handleClick('vsc')">VISUAL STUDIO CODE</a></li>
+            <li><a href="#inti">INTELLIJ IDEA</a></li>
+            <li><a href="#eclipse">ECLIPSE</a></li>
+            <li><a href="#pycharm">PYCHARM</a></li>
+            <li><a href="#xcode">XCODE</a></li>
+        </ol>
+        <h2>Indice de lenguajes de programacion</h2>
+        <ol>
+            <li><a href="#python">PYTHON</a></li>
+            <li><a href="#javascript">JAVASCRIPT</a></li>
+            <li><a href="#java">JAVA</a></li>
+            <li><a href="#csh">C#</a></li>
+            <li><a href="#cmm">C++</a></li>
+        </ol>
+    </section>
+
+    <h3>IDES MAS UTILIZADOS</h3>
+    <ul type="circle">
+        <li id="vsc">
+            VISUAL STUDIO CODE
+            <table>
+                <td>
+                    <figure>
+                        <picture>
+                            <a href="https://code.visualstudio.com/Docs">
+                            <source srcset="imagenes/IDES/vsc.avif" type="image/avif">
+                            <source srcset="imagenes/IDES/vsc.webp" type="image/webp">
+                                
+                                <img src="imagenes/IDES/vsc.png" alt="Visual Studio Code Logo" style="width: 315px;">
+                            </a>
+                            <figcaption></figcaption>
+                        </picture>
+                    </figure>
+                </td>
+                <td>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/CxF3ykWP1H4?si=ZBRKBKyCMmqjb1P_"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </td>
+                <td>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d481838.41282960086!2d-99.67786617215488!3d19.35344605902829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d201196dca8199%3A0xffe7560012c3a23b!2sCorporativo%20Microsoft%20M%C3%A9xico!5e0!3m2!1ses-419!2smx!4v1738696811838!5m2!1ses-419!2smx"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </td>
+                <td>
+                    <video src="videos/vs.mp4" controls width="700px" loop></video>
+                </td>
+            </table>
+        </li>
+        <li id="inti">
+            INTELLIJ IDEA
+            <table>
+                <td>
+                    <figure>
+                        <picture>
+                            <a href="https://www.jetbrains.com/idea/">
+                            <source srcset="imagenes/IDES/IJ.avif" type="image/avif">
+                            <source srcset="imagenes/IDES/IJ.webp" type="image/webp">
+                                
+                                <img src="imagenes/IDES/IJ.png" alt="INTELLIJ IDEA LOGO" style="width: 50px;">
+                            </a>
+                            <figcaption></figcaption>
+                        </picture>
+                    </figure>
+                </td>
+                <td>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/-QG4TFNKM2w?si=Uc--_VWt155_qTrf"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </td>
+                <td>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2437.7901842578403!2d4.8902723757552335!3d52.33795234969307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c60b47904314db%3A0xf4b8123a04612968!2sJetBrains%20N.V.%20(Main%20Building)!5e0!3m2!1ses-419!2smx!4v1738697426561!5m2!1ses-419!2smx"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </td>
+                <td>
+                    <video
+                        src="videos/Descarga e Instalación de INTELLIJ IDEA + JDK  Windows  Tutorial Paso a Paso, para Principiantes ✅ - UskoKruM2010 (720p, h264).mp4"
+                        controls width="700px" loop></video>
+                </td>
+            </table>
+
+        </li>
+        <li id="eclipse">
+            ECLIPSE
+            <table>
+                <td>
+                    <figure>
+                        <picture>
+                            <a href="https://eclipseide.org/">
+                            <source srcset="imagenes/IDES/Eclipse.avif" type="image/avif">
+                                
+                                <source srcset="imagenes/IDES/Eclipse.webp" type="image/webp">
+                                <img src="imagenes/IDES/Eclipse.png" alt="ECLIPSE LOGO" style="width: 50px;">
+                            </a>
+                        </picture>
+                    </figure>
+                </td>
+                <td>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/voomhne6JkM?si=UmhcE70thXgJa3Pz"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </td>
+                <td>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.928984373865!2d-99.2611742!3d19.3722274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d200dc6d9c3dbb%3A0xe146f685b596d5c7!2sIBM%20de%20M%C3%A9xico%2C%20S.%20de%20R.L.%20de%20C.V.!5e0!3m2!1ses-419!2smx!4v1738697686403!5m2!1ses-419!2smx"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </td>
+                <td>
+                    <video src="videos/Java JDK y ECLIPSE ☕ Instalar FÁCIL y RÁPIDO ✅ - Charly Cimino (720p, h264).mp4"
+                        controls width="700px" loop></video>
+                </td>
+            </table>
+        </li>
+        <li id="pycharm">
+            PYCHARM
+            <table>
+                <td>
+                    <figure>
+                        <picture>
+                            <a href="https://www.bing.com/ck/a?!&&p=422de9c7db5784ac6a8eb7e8a04abfb0a1c34c9f33a3cfdd99d1335b74a9aad8JmltdHM9MTc0MDk2MDAwMA&ptn=3&ver=2&hsh=4&fclid=31547692-088e-644a-3f79-63e809ab6588&psq=PYCHARM&u=a1aHR0cHM6Ly93d3cuamV0YnJhaW5zLmNvbS9weWNoYXJtLw&ntb=1">
+                            <source srcset="imagenes/IDES/pc.avif" type="image/avif">
+                                
+                                <source srcset="imagenes/IDES/pc.webp" type="image/webp">
+                                <img src="imagenes/IDES/pc.png" alt="PYCHARM LOGO" style="width: 50px;">
+                            </a>
+                        </picture>
+                    </figure>
+                </td>
+                <td>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/HHcZbXsZtm0?si=Z0RiiFi0_PL2UAJM"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </td>
+                <td>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2437.7901842578403!2d4.8902723757552335!3d52.33795234969307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c60b47904314db%3A0xf4b8123a04612968!2sJetBrains%20N.V.%20(Main%20Building)!5e0!3m2!1ses-419!2smx!4v1738697426561!5m2!1ses-419!2smx"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </td>
+                <td>
+                    <video
+                        src="videos/PyCharm Tutorial  Introduction to PyCharm  Basics in 10 Minutes - Max Rohowsky (720p, h264).mp4"
+                        controls width="700px" loop></video>
+                </td>
+            </table>
+        </li>
+        <li id="xcode">
+            XCODE
+            <table>
+                <td>
+                    <figure>
+                        <picture>
+                            <a href="https://www.bing.com/ck/a?!&&p=5b3a0dd1d7a223509f5af5864ea3245f9080343ab8d69f0fe21f108c806c6826JmltdHM9MTc0MDk2MDAwMA&ptn=3&ver=2&hsh=4&fclid=31547692-088e-644a-3f79-63e809ab6588&psq=XCODE&u=a1aHR0cHM6Ly9kZXZlbG9wZXIuYXBwbGUuY29tL3hjb2RlLw&ntb=1">
+                            <source srcset="imagenes/IDES/xcode.avif" type="image/avif">
+                                
+                                <source srcset="imagenes/IDES/xcode.webp" type="image/webp">
+                                <img src="imagenes/IDES/xcode.png" alt="XCODE LOGO" style="width: 50px;">
+                            </a>
+                        </picture>
+                    </figure>
+                </td>
+                <td>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/MyzZnIR5gC4?si=jPGPONR6YhV0RTFE"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </td>
+                <td>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.722002313889!2d-99.17695082598348!3d19.424413840944553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f92f51e99209%3A0xa3ce1c2e523291b8!2sApple%20Operations%20M%C3%A9xico!5e0!3m2!1ses-419!2smx!4v1738698092263!5m2!1ses-419!2smx"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </td>
+                <td>
+                    <video
+                        src="videos/XCODE COMO Crear una APP (para Principiantes) 📲 [Tutorial] - MoureDev by Brais Moure (720p, h264).mp4"
+                        controls width="700px" loop></video>
+                </td>
+            </table>
+        </li>
+    </ul>
+    <h3>LENGUAJES MAS UTILIZADOS</h3>
+    <ol>
+        <li id="python">
+            PYTHON
+            <table>
+                <td>
+                    <figure>
+                        <picture>
+                            <a href="https://www.bing.com/ck/a?!&&p=9cf6e60bcdfc7e5c96d8756e5bc8d104f8d1fcbafb6d5bbaa22647c37a529e58JmltdHM9MTc0MDk2MDAwMA&ptn=3&ver=2&hsh=4&fclid=31547692-088e-644a-3f79-63e809ab6588&psq=PYTHOn&u=a1aHR0cHM6Ly93d3cucHl0aG9uLm9yZy8&ntb=1">
+                            <source srcset="imagenes/LANGUAGES/Python.avif" type="image/avif">
+                                
+                                <source srcset="imagenes/LANGUAGES/Python.webp" type="image/webp">
+                                <img src="imagenes/LANGUAGES/Python.png" alt="PYTHON LOGO" style="width: 50px;">
+                            </a>
+                        </picture>
+                    </figure>
+                </td>
+                <td>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Rv910T1BJUw?si=UznJoiATEbQu6qLZ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </td>
+                <td>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.6420719786042!2d-99.20664612598337!3d19.427865040834398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f9a1a3c785d1%3A0xca9e00287ae0da10!2sGo%20sharp!5e0!3m2!1ses-419!2smx!4v1738698249043!5m2!1ses-419!2smx"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </td>
+                <td>
+                    <video
+                        src="videos/¿Sabes qué es PYTHON y por qué es un lenguaje de programación tan importante - Computer Hoy (720p, h264).mp4"
+                        controls width="700px" loop></video>
+                </td>
+            </table>
+        </li>
+        <li id="javascript">
+            JAVASCRIPT
+            <table>
+                <td>
+                    <figure>
+                        <picture>
+                            <a href="https://www.bing.com/ck/a?!&&p=7c21a5fea44b85906dce7385dbf629ff3922a3ed25284c617ed3acde59f588b9JmltdHM9MTc0MDk2MDAwMA&ptn=3&ver=2&hsh=4&fclid=31547692-088e-644a-3f79-63e809ab6588&psq=javascript+documentation&u=a1aHR0cHM6Ly9kZXZlbG9wZXIubW96aWxsYS5vcmcvZW4tVVMvZG9jcy9XZWIvSmF2YVNjcmlwdA&ntb=1">
+                            <source srcset="imagenes/LANGUAGES/JavaScript.avif" type="image/avif">
+                                
+                                <source srcset="imagenes/LANGUAGES/JavaScript.webp" type="image/webp">
+                                <img src="imagenes/LANGUAGES/JavaScript.png" alt="JAVASCRIPT LOGO" style="width: 50px;">
+                            </a>
+                        </picture>
+                    </figure>
+                </td>
+                <td>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/8GTaO9XhA5M?si=u5oZLCr4QZzkD3U4"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </td>
+                <td>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d481616.66706487135!2d-99.78249332656247!3d19.42837709999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d201f60d554def%3A0xa883580ec11d11c6!2sOracle!5e0!3m2!1ses-419!2smx!4v1739252937589!5m2!1ses-419!2smx"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </td>
+                <td>
+                    <video src="videos/Aprende JavaScript en 10 minutos 👨_💻 - Programador X (720p, h264) (2).mp4"
+                        controls width="700px" loop></video>
+                </td>
+            </table>
+        </li>
+        <li id="java">
+            JAVA
+            <table>
+                <td>
+                    <figure>
+                        <picture>
+                            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi_otWYx--LAxX5JEQIHVEMCscQFnoECBkQAQ&url=https%3A%2F%2Fdocs.oracle.com%2Fen%2Fjava%2F&usg=AOvVaw01angiPcaFbCL1WsBilpx9&opi=89978449">
+
+                            <source srcset="imagenes/LANGUAGES/java.avif" type="image/avif">
+                            <source srcset="imagenes/LANGUAGES/java.webp" type="image/webp">
+                                
+                                <img src="imagenes/LANGUAGES/java.jpg" alt="JAVA LOGO" style="width: 50px;">
+                            </a>
+                            <figcaption></figcaption>
+                        </picture>
+                    </figure>
+                </td>
+                <td>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/q_-mO8QJ4Ic?si=Xdjt7lfSVpcB7KIp"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </td>
+                <td>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d481616.66706487135!2d-99.78249332656247!3d19.42837709999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d201f60d554def%3A0xa883580ec11d11c6!2sOracle!5e0!3m2!1ses-419!2smx!4v1739252937589!5m2!1ses-419!2smx"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </td>
+                <td>
+                    <video src="videos/JAVA en 5 Minutos - Absolute (720p, h264) (2).mp4" controls width="700px"
+                        loop></video>
+                </td>
+            </table>
+        </li>
+        <li id="csh">
+            C#
+            <table>
+                <td>
+                    <figure>
+                        <picture>
+                            <source srcset="imagenes/LANGUAGES/csharp.avif" type="image/avif">
+                            <source srcset="imagenes/LANGUAGES/csharp.webp" type="image/webp">
+                            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwitssSmx--LAxW7JEQIHcT9BpoQjBB6BAgXEAE&url=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fdotnet%2Fcsharp%2Ftour-of-csharp%2F&usg=AOvVaw1zgL4gGb9APYIoYlE6lRFW&opi=89978449">
+                                
+                                <img src="imagenes/LANGUAGES/csharp.jpg" alt="C# LOGO" style="width: 50px;">
+                            </a>
+                            <figcaption></figcaption>
+                        </picture>
+                    </figure>
+                </td>
+                <td>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/axHut2e84fc?si=PiYwboCDVsIW5Vv4"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </td>
+                <td>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d481800.38738305826!2d-99.84121592656247!3d19.36631520000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d201196dca8199%3A0xffe7560012c3a23b!2sCorporativo%20Microsoft%20M%C3%A9xico!5e0!3m2!1ses-419!2smx!4v1739253654967!5m2!1ses-419!2smx"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </td>
+                <td>
+                    <video src="videos/Aprende C# en 15 minutos 🟣 - Programador X (720p, h264) (2).mp4" controls
+                        width="700px" loop></video>
+                </td>
+            </table>
+        </li>
+        <li id="cmm">
+            C++
+            <table>
+                <td>
+                    <figure>
+                        <picture>
+                            <source srcset="imagenes/LANGUAGES/C++.avif" type="image/avif">
+                            <source srcset="imagenes/LANGUAGES/C++.webp" type="image/webp">
+                            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjXlMi3x--LAxWFle4BHe0nCMkQFnoECAoQAQ&url=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fcpp%2F%3Fview%3Dmsvc-170&usg=AOvVaw3JKb0sxN1DYDwPUjiLr4b-&opi=89978449">
+
+                                <img src="imagenes/LANGUAGES/C++.png" alt="C++ LOGO" style="width: 50px;">
+                            </a>
+                            <figcaption></figcaption>
+                        </picture>
+                    </figure>
+                </td>
+                <td>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/0NPFJ73Pmu0?si=dYcF9o_GbMkuNCy8"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </td>
+                <td>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13040750.368608424!2d-140.46430914999993!3d37.0627983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808e4750e997abb1%3A0xbb0a4d19b3d051c4!2sEmbarcadero%20Technologies!5e0!3m2!1ses-419!2smx!4v1739253995889!5m2!1ses-419!2smx"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </td>
+                <td>
+                    <video src="videos/Lenguaje C++ en 3 Minutos! - Absolute (720p, h264).mp4" controls width="700px"
+                        loop></video>
+                </td>
+            </table>
+        </li>
+    </ol>
+    <h3>GLOSARIO DE TERMINOS</h3>
+    <dl>
+        <dt>IDE:</dt>
+        <dd>Es una aplicación de software que proporciona herramientas completas para los desarrolladores de software
+            para escribir, depurar y probar su código. Incluye un editor de código fuente, herramientas de compilación y
+            depuración, y a menudo un entorno gráfico para facilitar el desarrollo.</dd>
+        <dt>PYTHON:</dt>
+        <dd>Es un lenguaje de programación de alto nivel, interpretado y de propósito general. Es conocido por su
+            sintaxis clara y legible, lo que lo hace ideal para principiantes y utilizado ampliamente en desarrollo web,
+            ciencia de datos, inteligencia artificial, y más.</dd>
+        <dt>SOFTWARE:</dt>
+        <dd>Se refiere a los programas y otros sistemas operativos que se utilizan en una computadora. Incluye
+            aplicaciones, sistemas operativos, utilidades y cualquier otro tipo de código que hace que el hardware de
+            una computadora realice tareas específicas.</dd>
+        <dt>INTERNET:</dt>
+        <dd>Es una red mundial de computadoras interconectadas que utilizan el protocolo TCP/IP para comunicarse.
+            Facilita la comunicación y el intercambio de información a través de sitios web, correos electrónicos, redes
+            sociales, y otros servicios en línea.</dd>
+        <dt>MODELO OSI:</dt>
+        <dd>Es un modelo conceptual que estandariza las funciones de una red de telecomunicaciones o un sistema
+            informático en siete capas: Física, Enlace de Datos, Red, Transporte, Sesión, Presentación y Aplicación.
+            Cada capa tiene funciones específicas y se comunica con las capas adyacentes para permitir el flujo de datos
+            de extremo a extremo en una red.</dd>
+    </dl>
+    <hr>
+    <h3>DATOS PERSONALES</h3>
+
+    <dt>Nombre completo:</dt>
+    <dd>Velasco Pozo Rodrigo</dd>
+    <dt>Escuela:</dt>
+    <dd>tecnologico universitario chalco</dd>
+    <dt>Materia:</dt>
+    <dd>Programacion web 2</dd>
+    <dt>Grupo:</dt>
+    <dd>501</dd>
+</body>
+
+</html>

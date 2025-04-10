@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 8</title>
+</head>
+
+<body>
+    <h1>Practica Forms</h1>
+    <hr>
+    <section>
+        <form action="practicaForms.html">
+            <fieldset>
+
+                <legend>Datos personales</legend>
+                <label for="nombre">Nombre y apellidos</label>
+                <input type="text" name="nombre" id="nombre"><br><br>
+                <label for="nombre">Documento de identidad</label>
+                <input type="text" name="identidad" id="identidad"><br><br>
+                <label>
+                    <input type="radio" name="genero" id="femenino">
+                    Femenino
+                </label><br>
+                <label>
+                    <input type="radio" name="genero" id="femenino">
+                    Masculino
+                </label> <button type="button">Registra Genero</button> <input type="text" name="resultadoGenero"
+                    id="resultadoGenero">
+            </fieldset><br>
+            <fieldset>
+                <legend>DATOS DEL EGRESO</legend>
+                <label for="tipoGasto">Tipo de gasto</label>
+                <input list="gastos" name="gasto" id="gasto">
+                <datalist id="gastos">
+                    <option value="Tipo 1"></option>
+                    <option value="Tipo 2"></option>
+                    <option value="Tipo 3"></option>
+                    <option value="Tipo 4"></option>
+                </datalist><br><br>
+                <label for="fechaEgreso"> Fecha de egreso</label>
+                <table>
+                    <tr>
+                        <th><label for="dia">Dia</label></th>
+                        <th><label for="mes">Mes</label></th>
+                        <th><label for="year">Año</label></th>
+                    </tr>
+                    <tr>
+                        <td><input type="number" name="dia" id="dia" min="1" max="31"></td>
+                        <td><input type="number" name="mes" id="mes" min="1" max="12"></td>
+                        <td><input type="number" name="dia" id="dia" min="2020" max="2025"></td>
+                    </tr>
+                </table><br>
+                <label for="razonSocial">Razon Social</label>
+                <input type="text" name="razonSocial" id="razonSocial"><br><br>
+                <label for="ruc">RUC</label>
+                <input type="text" name="ruc" id="ruc">
+                <br><br>
+                <label for="tipoSustento">Sustento del egreso</label>
+                <input list="sustento" name="Sustento" id="Sustento">
+                <datalist id="sustento">
+                    <option value="Factura"></option>
+                    <option value="Boleta"></option>
+                    <option value="Plantilla Transporte"></option>
+                    <option value="Dec. Jurada"></option>
+                    <option value="Arrendamiento"></option>
+                </datalist><br><br>
+                <label for="MontoT">Monto Total (S/.)</label>
+                <input type="text" name="Monto" id="Monto">
+                <label for="impuesto">Impuesto extra (%)</label>
+                <input type="text" name="impuestoEx" id="impuestoEx">
+                <br><br>
+                <button>Grabar</button> <button>Salir</button>
+            </fieldset>
+        </form>
+    </section>
+</body>
+
+</html>

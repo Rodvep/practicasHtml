@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 7</title>
+</head>
+
+<body>
+    <section>
+        <h1>Formularios</h1>
+        <hr>
+        <form action="./index.html" method="post"></form>
+        <fieldset>
+            <legend>Regístrate</legend>
+            <label for="edad">Edad</label>
+            <input type="number" placeholder="Ingresa tu edad" name="edad" id="edad" min="20" required><br><br>
+            <label>Nombre</label>
+            <input type="text" placeholder="Escribe tu nombre" name="nombre" id="nombre" required><br><br>
+            <label>Correo</label>
+            <input type="text" placeholder="Escribe tu Correo" name="correo" id="correo" required>
+            <br><br><button type="submit">ENVIAR</button>
+        </fieldset>
+
+        <fieldset>
+            <legend>Genero</legend>
+            <label>Hombre
+                <input type="radio" name="genero" id="hombre">
+            </label>
+            <label>Mujer
+                <input type="radio" name="genero" id="mujer">
+            </label><br><br>
+            <label for="">Fecha de nacimiento</label>
+            <input type="date" name="fechaNacimiento" value="">
+        </fieldset>
+        <fieldset>
+            <legend>Ciudades de eventos</legend>
+            <label for="ciudad">Ciudad</label>
+            <input list="ciudades" id="ciudad" name="ciudad">
+            <datalist id="ciudades">
+                <option value="Madrid"></option>
+                <option value="Valencia"></option>
+                <option value="Sevilla"></option>
+                <option value="Bilboa"></option>
+            </datalist>
+        </fieldset>
+    </section>
+</body>
+
+</html>
